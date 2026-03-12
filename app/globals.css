@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+.glass-panel {
+  @apply border border-border/60 bg-slate-900/60 backdrop-blur-xl;
+}
+
+.hover-lift {
+  @apply transition-transform duration-200 ease-out hover:-translate-y-1 hover:shadow-glow-soft;
+}
+
+.scroll-thin {
+  scrollbar-width: thin;
+}
+
